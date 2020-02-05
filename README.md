@@ -1,6 +1,3 @@
-# yuicompressor
- lightweight yuicompressor docker image for command line minification of js and css files
-
 # YUI Compressor
 
 The YUI Compressor is a CSS & Javascript compression and minification tool based on Java. Official documentation can be found [here](https://yui.github.io/yuicompressor/). There might be many reasons why you would run Java inside a container instead of installing it directly on your machine. This image is based on the popular [Alpine Linux project](https://alpinelinux.org/) and contains the bare minimum JRE components required to run the YUI Compressor from [OpenJDK](https://hub.docker.com/_/openjdk) and weighs in at only ~83MB.
