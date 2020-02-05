@@ -5,13 +5,13 @@ The YUI Compressor is a CSS & Javascript compression and minification tool based
 ## How to use this image
 
 ```sh
-docker run -it -v ${PWD}:/yui --rm nullmem/yuicompressor input.js -o output.min.js```
+docker run -it -v ${PWD}:/yui --rm nullmem/yuicompressor input.js -o output.min.js
 ```
 
 ## You can also create a shell alias
 
 ```sh
-alias yuicompressor="docker run -it -v \${PWD}:/yui --rm nullmem/yuicompressor"```
+alias yuicompressor="docker run -it -v \${PWD}:/yui --rm nullmem/yuicompressor"
 ```
 
 ## Recursive batch compression
@@ -19,5 +19,5 @@ alias yuicompressor="docker run -it -v \${PWD}:/yui --rm nullmem/yuicompressor"`
 You can also recursively compress all CSS & Javascript files in the current directory and all its subdirectories. This script will ignore all currently minimized files ( *.min.css | *.min.js ) and will overwrite them with the latest minimized version automatically.
 
 ```sh
-docker run -v ${PWD}:/yui -it --rm --entrypoint /bin/batch-compress.sh nullmem/yuicompressor```
+docker run -v ${PWD}:/yui -it --rm --entrypoint /bin/batch-compress.sh nullmem/yuicompressor
 ```
